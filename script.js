@@ -6,9 +6,16 @@ document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 
 const changeColor = (e) => {
     if(e.keyCode == 38) {
+red+=3
+blue+=3
+green+=3
+document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
 
     } else if(e.keyCode == 40) {
-        
+        red-=3
+        blue-=3
+        green-=3
+        document.body.style.backgroundColor = `rgb(${red}, ${green}, ${blue})`;
     }
 }
 
